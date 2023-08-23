@@ -4,8 +4,9 @@
 // y = k1 * x + b1;    y = k2 * x + b2.
 // Значения k1, b1 и k2, b2 задаются пользователем:
 // k1 = 5, b1 = 2;     k2 = 9, b2 = 4     –> (-0,5; -0,5)
-//          y
+//          y  +
 //          ^
+//          |
 //          *
 //          |
 //          +
@@ -69,7 +70,7 @@ void Graph(int k1G, int b1G, int k2G, int b2G)
     }
 }
 
-// int k1 = 5; int b1 = 2; int k2 = 9; int b2 = 4;
+// int k1 = 5; int b1 = 2; int k2 = 9; int b2 = 4; // –> (-0,5; -0,5)
 
 Console.WriteLine("Для уравнения: y = k1 * x + b1");
 Console.Write("Введите коэффициент k1: ");
