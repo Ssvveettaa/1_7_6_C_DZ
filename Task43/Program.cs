@@ -39,14 +39,14 @@ void Graph(int k1G, int b1G, int k2G, int b2G)
     }
     else
     {
-        int xG = (int)X(k1G, b1G, k2G, b2G);
-        int yG = (int)Y(k1G, b1G, xG);
-        if (xG < 0) xMin = xG - border;
-        else xMax = xG + border;
-        if (yG < 0) yMin = yG - border;
-        else yMax = yG + border;
+        double xG = X(k1G, b1G, k2G, b2G);
+        double yG = Y(k1G, b1G, xG);
+        if (xG < 0) xMin = (int)xG - border;
+        else xMax = (int)xG + border;
+        if (yG < 0) yMin = (int)yG - border;
+        else yMax = (int)yG + border;
     }
-
+    
     for (int j = yMax + 2; j >= yMin; j--)      // Вывод графика в заданных границах,
     {                                           // добавлено 2 строки в начале графика
         for (int i = xMin; i <= xMax; i++)      // для вывода вверху графика символов "y" и "^".
